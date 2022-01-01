@@ -1,4 +1,4 @@
-package com.fatemeh;
+package com.fatemeh.main;
 
 import java.util.Map;
 import java.util.Scanner;

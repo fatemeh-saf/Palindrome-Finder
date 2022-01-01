@@ -1,6 +1,6 @@
 package com.fatemeh.test;
 
-import com.fatemeh.PalindromeFinder;
+import com.fatemeh.main.PalindromeFinder;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
