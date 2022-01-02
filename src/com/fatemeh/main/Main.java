@@ -25,8 +25,7 @@ public class Main {
             });
         }
 
-        //String string="ABCBAHELLOHOWRACECARAREYOUILOVEUEVOLIIAMAIDOINGGOOD";
-        //String string="ABCDCBARARILOVEUEVOLIAMAITTOO";
+
 
     }
 }

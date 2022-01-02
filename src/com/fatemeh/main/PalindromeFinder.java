@@ -31,7 +31,7 @@ public class PalindromeFinder {
         Map<String, Integer> result = map.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey(Comparator.comparingInt(String::length).reversed()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
-                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+                        (oldValue, newValue) -> oldValue, HashMap::new));
 
         return result;
 
@@ -58,7 +58,7 @@ public class PalindromeFinder {
         left++;
         right--;
 
-        if(right-left+1>1){
+        if(right-left>0){
             map.put(str.substring(left, right + 1),left);
         }
 
@@ -79,7 +79,7 @@ public class PalindromeFinder {
         while (left >= 0 && right < str.length()
                 && str.charAt(left) == str.charAt(right))
         {
-            if(right-left+1>1){
+            if(right-left>0){
             map.put(str.substring(left, right + 1),left);
         }
             left--;

@@ -27,6 +27,8 @@ class PalindromeFinderTest {
         //assert
         assertNotNull(expected);
         assertTrue(expected.equals(map));
+        assertTrue(expected.containsKey("ABCBA"));
+        assertFalse(expected.containsValue(4));
 
     }
 
