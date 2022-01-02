@@ -1,8 +1,8 @@
 # Palindrome-Finder
-Repo of code to get a string from the user and print all palindromic substrings along with their starting position and length, sorted by their length
+Repo of code to find and print all palindromic substrings in the given string along with their starting position and length, sorted by their length
 
 # User Instruction: 
-  -run the Main.java class and type string to find it's palindrome substrings in the console and hit enter
+  -run the Main.java class. Type string in the console and hit enter to find it's palindrome substrings
 
 # Assumptions:
    -String is all capital letters with no punctuations
