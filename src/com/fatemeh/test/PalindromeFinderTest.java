@@ -89,6 +89,19 @@ class PalindromeFinderTest {
         assertTrue(expected.equals(map));
     }
 
+    @Test
+    void findAllPalindromicSubstrings_with_null_str() {
+        //arrange
+        //testCase="";
+
+        //act
+        expected= PalindromeFinder.findAllPalindromicSubstrings(testCase);
+
+        //assert
+        assertNull(expected);
+        //assertFalse(expected.isEmpty());
+        //assertFalse(expected.equals(map));
+    }
 
 
 }
