@@ -13,9 +13,9 @@ public class PalindromeFinder {
      */
     public static Map<String,Integer> findAllPalindromicSubstrings(String str)
     {
-        Map<String,Integer> map=new HashMap<>();
-
         if(str==null) return null;
+
+        Map<String,Integer> map=new HashMap<>();
 
         for (int i = 0; i < str.length(); i++)
         {
@@ -31,7 +31,7 @@ public class PalindromeFinder {
         Map<String, Integer> result = map.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey(Comparator.comparingInt(String::length).reversed()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
-                        (oldValue, newValue) -> oldValue, HashMap::new));
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
 
         return result;
 
